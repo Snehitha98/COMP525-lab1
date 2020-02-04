@@ -32,23 +32,6 @@ def smaller_than(limit, num_list):
             result=result+[num]
     return result
 
-if __name__ == '__main__':
-    print('Testing smaller_than()')
-    a_limit = 3
-    nums = [4, 1, 2, 7]
-    result = smaller_than(a_limit, nums)
-    print(result)
-
-    print('test_case to return original list')
-    a_limit=9
-    result = smaller_than(a_limit, nums)
-    print(result)
-
-    print('test_case to return empty list')
-    a_limit=0
-    result = smaller_than(a_limit, nums)
-    print(result)
-
 
 def sum_odd(n):
     """
@@ -67,12 +50,35 @@ def sum_odd(n):
             sum_odd=sum_odd+num
     return sum_odd
 
+
 if __name__ == '__main__':
+    print('Testing smaller_than()')
+    a_limit = 3
+    nums = [4, 1, 2, 7]
+    result = smaller_than(a_limit, nums)
+    print(result)
+
+    print('test_case to return original list')
+    a_limit=9
+    result = smaller_than(a_limit, nums)
+    print(result)
+
+    print('test_case to return empty list')
+    a_limit=0
+    result = smaller_than(a_limit, nums)
+    print(result)
+
     print('Testing sum_odd()')
     result=sum_odd(3)
     print(result)
 
+    print('test_case1_for_sum_odd()')
+    result=sum_odd(1)
+    print(result)
 
+    print('test_case2_for_sum_odd()')
+    result=sum_odd(22)
+    print(result)
 
 def get_lengths(sentence):
     """

@@ -39,6 +39,11 @@ if __name__ == '__main__':
     result = smaller_than(a_limit, nums)
     print(result)
 
+    print('test_case to return original list')
+    a_limit=9
+    result = smaller_than(a_limit, nums)
+    print(result)
+
 
 def sum_odd(n):
     """

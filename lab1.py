@@ -44,6 +44,11 @@ if __name__ == '__main__':
     result = smaller_than(a_limit, nums)
     print(result)
 
+    print('test_case to return empty list')
+    a_limit=0
+    result = smaller_than(a_limit, nums)
+    print(result)
+
 
 def sum_odd(n):
     """

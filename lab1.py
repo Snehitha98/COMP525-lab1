@@ -26,6 +26,18 @@ def smaller_than(limit, num_list):
     Example
     smaller_than(3, [4, 1, 2, 7]) returns [1, 2]
     """
+    result=[]
+    for num in nums:
+        if num<a_limit:
+            result=result+[num]
+    return result
+
+if __name__ == '__main__':
+    print('Testing smaller_than()')
+    a_limit = 3
+    nums = [4, 1, 2, 7]
+    result = smaller_than(a_limit, nums)
+    print(result)
 
 
 def sum_odd(n):
@@ -51,12 +63,7 @@ def get_lengths(sentence):
     """
 
 
-if __name__ == '__main__':
-    print('Testing smaller_than()')
-    a_limit = 3
-    nums = [4, 1, 2, 7]
-    result = smaller_than(a_limit, nums)
-    print(result)
+
 
     # Write a test case that returns an empty list
 

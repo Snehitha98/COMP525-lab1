@@ -50,6 +50,19 @@ def sum_odd(n):
     sum_odd(3) returns 4
     """
 
+    nums = range(0,n+1)
+    sum_odd=0
+    for num in nums:
+        if num%2==1:
+            sum_odd=sum_odd+num
+    return sum_odd
+
+if __name__ == '__main__':
+    print('Testing sum_odd()')
+    result=sum_odd(3)
+    print(result)
+
+
 
 def get_lengths(sentence):
     """

@@ -114,5 +114,14 @@ if __name__ == '__main__':
     sentence='a happy song'
     num_list=get_lengths(sentence)
     print(num_list)
+
+    
     # Write two teat cases for get_lengths() that are different than the given
     # example
+    print('test_case1_for_get_lengths()')
+    num_list=get_lengths('This is Snehitha Mamidi')
+    print(num_list)
+
+    print('test_case2_for_get_lengths()')
+    num_list=get_lengths('playing games')
+    print(num_list)

@@ -51,34 +51,6 @@ def sum_odd(n):
     return sum_odd
 
 
-if __name__ == '__main__':
-    print('Testing smaller_than()')
-    a_limit = 3
-    nums = [4, 1, 2, 7]
-    result = smaller_than(a_limit, nums)
-    print(result)
-
-    print('test_case to return original list')
-    a_limit=9
-    result = smaller_than(a_limit, nums)
-    print(result)
-
-    print('test_case to return empty list')
-    a_limit=0
-    result = smaller_than(a_limit, nums)
-    print(result)
-
-    print('Testing sum_odd()')
-    result=sum_odd(3)
-    print(result)
-
-    print('test_case1_for_sum_odd()')
-    result=sum_odd(1)
-    print(result)
-
-    print('test_case2_for_sum_odd()')
-    result=sum_odd(22)
-    print(result)
 
 def get_lengths(sentence):
     """
@@ -90,18 +62,57 @@ def get_lengths(sentence):
     Example:
     get_lengths('a happy song') returns [1, 5, 4]
     """
+    result=[]
+    count=0
+    for i in sentence:
+        if i == " ":
+          result=result+[count]
+          count=0
+
+        else:
+          count=count+1
+
+    num_list=result+[count]
+    return num_list
 
 
+if __name__ == '__main__':
+    print('Testing smaller_than()')
+    a_limit = 3
+    nums = [4, 1, 2, 7]
+    result = smaller_than(a_limit, nums)
+    print(result)
 
+# Write a test case that returns the original list
+    print('test_case to return original list')
+    a_limit=9
+    result = smaller_than(a_limit, nums)
+    print(result)
 
-    # Write a test case that returns an empty list
-
-    # Write a test case that returns the original list
+# Write a test case that returns an empty list
+    print('test_case to return empty list')
+    a_limit=0
+    result = smaller_than(a_limit, nums)
+    print(result)
 
     print('Testing sum_odd()')
-    # Write two test cases for sum_odd() that are different than the given
-    # example.
+    result=sum_odd(3)
+    print(result)
+
+# Write two test cases for sum_odd() that are different than the given
+# example.
+    print('test_case1_for_sum_odd()')
+    result=sum_odd(1)
+    print(result)
+
+    print('test_case2_for_sum_odd()')
+    result=sum_odd(22)
+    print(result)
+
 
     print('Testing get_lengths()')
+    sentence='a happy song'
+    num_list=get_lengths(sentence)
+    print(num_list)
     # Write two teat cases for get_lengths() that are different than the given
     # example
